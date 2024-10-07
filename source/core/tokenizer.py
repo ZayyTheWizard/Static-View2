@@ -51,6 +51,9 @@ class CodeTokenizer:
             self.tokens.append((token_type, token_value))
 
         return self.tokens
+    
+    def get_tokens(self) -> List[Tuple[int, str]]:
+        return self.tokens
 
     def standardized_tokens(self) -> List[str]:
         """

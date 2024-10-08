@@ -6,7 +6,10 @@ if __name__ == "__main__":
     file_path = 'source/tests/test.py'
     
     astTree = ast_parser(file_path)
-    print(ast.dump(astTree, indent=4))
+    if astTree is not None:
+        print(ast.dump(astTree, indent=4))
+    else:
+        pass
     # Initialize tokenizer with the file path
     #tokenizer = CodeTokenizer(file_path)
     #

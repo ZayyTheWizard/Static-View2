@@ -80,22 +80,3 @@ class CodeTokenizer:
             print(f"Token Type: {token_type}, Token Vlaue: {token_value}")
 
 
-if __name__ == "__main__":
-    
-
-    file_path = 'source/tests/test.py'
-    
-    # Initialize tokenizer with the file path
-    tokenizer = CodeTokenizer(file_path)
-    
-    # Tokenize the code
-    tokenizer.tokenize_code()
-    
-    # Display all tokens
-    print("Tokens from file input:")
-    tokenizer.display_tokens()
-    
-    # Standardized tokens
-    standardized = tokenizer.standardized_tokens()
-    print("\nStandardized Tokens:")
-    print(standardized)
